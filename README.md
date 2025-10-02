@@ -1,68 +1,66 @@
-Cyber Security Internship - Task 7: Identify and Remove Suspicious Browser Extensions
-1. Objective
-The objective of this task was to learn to spot and remove potentially harmful browser extensions in a web browser. This exercise aims to raise awareness of browser security risks and best practices for managing browser extensions.
+# 🛡️ Cyber Security Internship – Task 7: Identify and Remove Suspicious Browser Extensions
 
+## 📌 Objective
 
+Learn to identify, analyze, and remove potentially harmful browser extensions, improving awareness of browser-based threats and best practices for extension management.
 
-2. Tools Used
-Web Browser: Google Chrome 
+---
 
-Operating System: Windows 11
+## 🧰 Tools Used
 
-3. Step-by-Step Process and Analysis
-The following steps were taken to review the installed extensions, as outlined in the mini-guide :
+- **Browser:** Google Chrome
+- **Operating System:** Windows 11
 
-Accessed the Extensions Manager: Navigated to chrome://extensions to view all installed extensions.
+---
 
-Reviewed Extensions: Two extensions were found: "Dark Theme - Dark mode for Chrome" and "Google Docs Offline."
+## 🔍 Task Overview
 
-Analyzed "Dark Theme - Dark mode for Chrome":
+The task involved:
 
-Permissions Found: This extension requested access to "Read your browsing history" and "Allow this extension to read and change all your data on websites that you visit" (on all sites).
+1. Reviewing installed extensions via `chrome://extensions`
+2. Analyzing the permissions of each extension
+3. Removing any suspicious or overly permissive extensions
+4. Researching how malicious extensions can compromise user security
 
-Suspicion Rating: High. These permissions are excessive for a simple theme/dark mode utility and pose a severe security risk, as the extension could steal credentials or inject malicious code on any webpage.
+---
 
-Action: Removed immediately.
+## 📋 Extensions Reviewed
 
-Analyzed "Google Docs Offline":
+| Extension Name                      | Action Taken | Reason                                                                                     |
+|------------------------------------|--------------|--------------------------------------------------------------------------------------------|
+| Dark Theme - Dark mode for Chrome  | ❌ Removed    | High risk: Excessive permissions (access to all sites + browsing history)                 |
+| Google Docs Offline                | ✅ Kept       | Low risk: Official extension with limited, relevant permissions (Google Docs & Drive only) |
 
-Permissions Found: This extension requested to "read and change your data on sites," but its access was limited to https://docs.google.com/* and https://drive.google.com/*.
+---
 
-Suspicion Rating: Low. The permissions are appropriately scoped and necessary for the official function of allowing offline document access.
+## 🧠 Key Learnings
 
-Action: Kept.
+- **Malicious extensions** can:
+  - Steal data (credentials, credit cards)
+  - Inject ads or redirect traffic
+  - Run unauthorized scripts
+- **Safe extension practices** include:
+  - Only installing from trusted sources
+  - Reviewing permissions before installing
+  - Regularly auditing installed extensions
 
+---
 
-Performance Check: Restarted the browser to confirm that the removal of the suspicious extension did not cause any instability and potentially improved performance.
+## 📁 Files in This Repository
 
-4. Deliverables: List of Suspicious Extensions Found and Removed
-Extension Name	Action Taken	Reason for Removal / Security Risk
-Dark Theme - Dark mode for Chrome	Removed	High Risk: Requested blanket access to all sites and browsing history. This privilege is highly exploitable for tracking, credential theft, and injecting malware/ads.
-Google Docs Offline	Kept	Not Suspicious: Legitimate, official extension whose permissions were appropriately limited to only Google Docs and Drive domains.
+| File Name        | Description                                 |
+|------------------|---------------------------------------------|
+| `task7-report.md`| Markdown version of the detailed task report|
+| `README.md`      | Overview of the project (this file)         |
 
-Export to Sheets
-5. Research on Malicious Extensions
-(This section fulfills the requirement to "Research how malicious extensions can harm users" and prepares for the Interview Questions .)
+---
 
+## ✅ Conclusion
 
-Malicious browser extensions can pose significant security risks by:
+This task helped develop practical skills in browser security hygiene, specifically the identification and removal of risky Chrome extensions. It also reinforced the importance of user vigilance when granting permissions to browser add-ons.
 
+---
 
-Data Theft: Using overly broad permissions to monitor user activity, record keystrokes (passwords, credit cards), and scrape data from secure websites.
-
-Adware/Hijacking: Changing the browser's default search engine or injecting unwanted advertisements into websites (adware).
-
-Unauthorized Activity: Running malicious code in the background to perform actions on the user's behalf, such as clicking on links or making purchases.
-
-To install extensions safely, users should:
-
-Only install extensions from 
-
-official, reputable stores (like the Chrome Web Store).
-
-
-Carefully review the permissions requested, and reject any that are not strictly necessary for the extension's function (e.g., a simple weather extension shouldn't need "all data on all sites").
-
-Check the extension's 
-
-user reviews, number of users, and developer reputation.
+> 🧑‍💻 Created during a Cyber Security Internship  
+> 📅 October 2025  
+> 🌐 Author: Hrithik chhoker
